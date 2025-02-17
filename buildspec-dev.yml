@@ -35,6 +35,6 @@ phases:
       - terraform plan -lock=false -input=false -var-file=dev.tfvars           
       - terraform $TF_COMMAND -input=false -var-file=dev.tfvars -auto-approve  
   post_build:
-    on-failure: CONTINUE   
+    on-failure: ABORT   
     commands:
       - echo terraform execution completed on `date`      
