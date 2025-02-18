@@ -40,11 +40,12 @@ module "rds" {
   sg-name              = var.SG-NAME
   private-subnet-name1 = var.PRIVATE-SUBNET1
   private-subnet-name2 = var.PRIVATE-SUBNET2
-  db-sg-name           = var.DB-SG-NAME
-  rds-username         = var.RDS-USERNAME
-  rds-pwd              = var.RDS-PWD
-  db-name              = var.DB-NAME
-  rds-name             = var.RDS-NAME
+  #db-sg-name           = var.DB-SG-NAME
+  db-sg-name   = module.security-group.database-sg.id
+  rds-username = var.RDS-USERNAME
+  rds-pwd      = var.RDS-PWD
+  db-name      = var.DB-NAME
+  rds-name     = var.RDS-NAME
 
   depends_on = [module.security-group]
 }
@@ -96,5 +97,5 @@ module "route53" {
   alb-name     = var.ALB-NAME
   web_acl_name = var.WEB-ACL-NAME
 
-  depends_on = [ module.autoscaling ]
+  depends_on = [module.autoscaling]
 }

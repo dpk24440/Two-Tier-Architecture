@@ -28,7 +28,7 @@ resource "aws_security_group" "alb-sg" {
     Name = var.alb-sg-name
   }
 
-  depends_on = [ data.aws_vpc.vpc ]
+  depends_on = [data.aws_vpc.vpc]
 }
 
 
@@ -75,7 +75,7 @@ resource "aws_security_group" "web-tier-sg" {
     Name = var.web-sg-name
   }
 
-  depends_on = [ aws_security_group.alb-sg ]
+  depends_on = [aws_security_group.alb-sg]
 }
 
 
@@ -103,5 +103,5 @@ resource "aws_security_group" "database-sg" {
     Name = var.db-sg-name
   }
 
-  depends_on = [ aws_security_group.web-tier-sg ]
+  depends_on = [aws_security_group.web-tier-sg]
 }
