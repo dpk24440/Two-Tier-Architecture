@@ -41,7 +41,7 @@ module "rds" {
   private-subnet-name1 = var.PRIVATE-SUBNET1
   private-subnet-name2 = var.PRIVATE-SUBNET2
   #db-sg-name           = var.DB-SG-NAME
-  db-sg-name   = module.security-group.database-sg.id
+  db-sg-name   = module.security-group.db_sg_id
   rds-username = var.RDS-USERNAME
   rds-pwd      = var.RDS-PWD
   db-name      = var.DB-NAME
