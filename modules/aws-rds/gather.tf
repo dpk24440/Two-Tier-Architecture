@@ -17,4 +17,7 @@ data "aws_security_group" "db-sg" {
     name   = "tag:Name"
     values = [var.db-sg-name]
   }
+  
+  depends_on = [module.security-group]  # Ensure SG is created before lookup
+
 }
