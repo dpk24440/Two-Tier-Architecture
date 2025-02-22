@@ -24,7 +24,7 @@ Follow these steps to deploy the Two-Tier architecture:
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/AmanPathak-DevOps/Terraform-for-AWS
+   git clone https://github.com/repoxxxx.git
    cd Terraform-for-AWS/Non-Modularized/Two-Tier-Application/bloody-sweet
    ```
 
