@@ -1,6 +1,5 @@
 # Two-Tier AWS Infrastructure with Terraform
 
-<img src="bloody-sweet/assets/Two-Tier-Architecture.gif"> </img>
 
 ## Overview
 
