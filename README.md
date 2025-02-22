@@ -1,6 +1,5 @@
 # Two-Tier AWS Infrastructure with Terraform
-
-![Two-Tier-Architecture](https://github.com/user-attachments/assets/Two-Tier-Architecture)
+![Two-Tier-Architecture](https://github.com/user-attachments/assets/Two-Tier-Architecture.gif)
 
 ## Overview
 
